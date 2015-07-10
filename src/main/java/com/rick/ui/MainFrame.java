@@ -117,7 +117,7 @@ public class MainFrame extends JFrame {
                     "n=10\n" +
                     "#邮件设置\n" +
                     "#是否发邮件，true/false\n" +
-                    "e=true\n" +
+                    "e=false\n" +
                     "#收件人，多个用;隔开\n" +
                     "to=jkxyx205@163.com;154894898@qq.com\n" +
                     "#显示多少行开奖信息\n" +
