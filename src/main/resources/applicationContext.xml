@@ -18,7 +18,7 @@
         </property>
         <property name="javaMailProperties">
             <props>
-                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.auth">false</prop>
                 <prop key="mail.smtp.timeout">5000</prop>
             </props>
         </property>
@@ -26,7 +26,7 @@
             <value>jkxyx205@163.com</value>
         </property>
         <property name="password">
-            <value>xxx</value>
+            <value>123456xx</value>
         </property>
     </bean>
 

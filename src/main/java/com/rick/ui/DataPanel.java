@@ -82,18 +82,29 @@ class BgColorCellRenderrer extends DefaultTableCellRenderer {
     public Component getTableCellRendererComponent(JTable table,
                                                    Object value, boolean isSelected, boolean hasFocus, int row,
                                                    int column) {
-        BgColorCellRenderrer comp = (BgColorCellRenderrer) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-        comp.setText("");
+        JLabel comp = new JLabel();
+
+//        BgColorCellRenderrer comp = (BgColorCellRenderrer) super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+
+        comp.setHorizontalAlignment(JLabel.CENTER);
         String v = (String) value;
+        comp.setOpaque(true);
+
+        comp.setFont(new Font("黑体",Font.PLAIN, 11));
         comp.setBackground(Color.white);
-        if (column == 4 && "0".equals(v))
+        if (column == 4 && "0".equals(v)) {
             comp.setBackground(Constants.COLOR_TITLE_SINGLE);
-        else  if (column == 5 && "1".equals(v))
+            comp.setText("单");
+        } else  if (column == 5 && "1".equals(v)) {
             comp.setBackground(Constants.COLOR_TITLE_DOUBLE);
-        else  if (column == 6 && "1".equals(v))
+            comp.setText("双");
+        } else  if (column == 6 && "1".equals(v)) {
             comp.setBackground(Constants.COLOR_TITLE_BIG);
-        else  if (column == 7 && "0".equals(v))
+            comp.setText("大");
+        } else  if (column == 7 && "0".equals(v)) {
             comp.setBackground(Constants.COLOR_TITLE_SMALL);
+            comp.setText("小");
+        }
         return comp;
     }
 }

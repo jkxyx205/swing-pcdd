@@ -119,7 +119,7 @@ public class MainFrame extends JFrame {
                     "#是否发邮件，true/false\n" +
                     "e=false\n" +
                     "#收件人，多个用;隔开\n" +
-                    "to=jkxyx205@163.com;154894898@qq.com\n" +
+                    "to=aaa@163.com;bbb@qq.com\n" +
                     "#显示多少行开奖信息\n" +
                     "r=50\n";
             FileUtils.writeStringToFile(file, defaultParam, "utf-8");

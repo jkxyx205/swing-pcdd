@@ -94,7 +94,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>com.rick.Application.</mainClass>
+                            <mainClass>com.rick.ui.MainFrame</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
